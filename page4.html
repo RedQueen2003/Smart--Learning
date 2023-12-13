@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style4.css" />
+<title>No Video</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+      
+      $("a").on('click', function(event) {
+    
+        
+        if (this.hash !== "") {
+          
+          event.preventDefault();
+    
+          
+          var hash = this.hash;
+    
+          
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            
+            window.location.hash = hash;
+          });
+        } 
+      });
+    });
+    </script>
+</head>
+<body>
+    <div class="main" id="section1"> <a href="#section2"><img src='media/visuals1.png' class='pageBtn' id='pageBtn1'></a></div>
+    <div class="main" id="section2"> <a href="#section3"><img src='media/visuals2.png' class='pageBtn' id='pageBtn2'></a></div>
+    <div class="main" id="section3"><img src='media/visuals3.png' class='pageBtn' id='pageBtn3'></div>
+
+</body>
+</html>
+
+
+
